@@ -1,0 +1,79 @@
+body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        }
+        footer {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: lightgray;
+        }
+        .weather-app {
+            display: block;
+            margin: 0 auto;
+            border: 4px solid #577D86;
+            border-radius: 7px;
+            max-width: 900px;
+            padding: 40px 50px 60px 50px;
+            background: linear-gradient(to bottom, #dfe9f3 0%, white 100%);
+            margin-top: 70px;
+        }
+        .input {
+            margin-bottom: 20px;
+        }
+        .city {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        .today {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 7px 20px 10px 140px;
+        }
+        .weather-today {
+            font-size:50px;
+            font-weight: 800;
+            margin: 50px 20px 80px 20px;
+        }
+        .temperature-today {
+            color: #569DAA;
+        }
+        .temperature-emoji{
+            margin: 35px 10px 0px 0px;
+        }
+        .about-today {
+            margin-top: 20px;
+        }
+        .sunrise, .sunset {
+            font-size: 15px;
+        }
+        .sunrise-sunset {
+            margin-top: 15px;
+        }
+        .forecast-next-days {
+            font-size: 25px;
+        }
+        .emoji {
+            font-size: 35px;
+        }
+        /* spacing */
+
+table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse:separate;
+  border: 3px solid #569DAA;
+  border-radius: 7px;
+}
+
+th,
+td {
+  padding: 20px;
+}
+.row-table:hover {
+    background: #B9EDDD;
+    transition: all 200ms ease-in-out;
+}

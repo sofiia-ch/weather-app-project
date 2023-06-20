@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+      <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="weather-app">
+        <form id="search-form">
+          <input
+          class="input"
+            type="text"
+            placeholder="Enter a city...🔎"
+            autocomplete="off"
+            autofocus="on"
+            id="search-text-input"
+          />
+          <input type="submit" value="Search" />
+        </form>
+        <div class="row">
+          <div class="col-8">
+            <h1 class="city" id="city">Trondheim</h1>
+            <h4 class="today" id="today">Saturday 12:38</h4>
+            <div class="temperature-emoji">
+            <span class="weather-today temperature-today" id="temperature-today">+9°C</span> 
+            <span class=" weather-today emoji-today">⛅</span>
+            </div>
+            <br />
+            <div class="row about-today">
+            <div class="col-6 parameters"><div>Humidity: 46%</div><div>Wind: 3 km/h</div><div>Feels like: 8°C</div>
+            </div>
+            <div class="col-6">
+                <div class="sunrise-sunset">
+            <div class="col-6 sunrise">Sunrise: 04:37</div>
+            <div class="col-6 sunset">Sunset: 21:51</div>
+            </div>
+            </div>
+        </div>
+          </div>
+          <div class="col-4">
+            <table border="1">
+                <tbody>
+                <tr class="row-table">
+                    <td>Sun</td>
+                    <td>+14°C</td>
+                    <td>⛅</td>
+                </tr>
+                <tr class="row-table">
+                    <td>Mon</td>
+                    <td>+14°C</td>
+                    <td>☁</td>
+                </tr>
+                <tr class="row-table">
+                    <td>Tue</td>
+                    <td>+16°C</td>
+                    <td>☁</td>
+                </tr>
+                <tr class="row-table">
+                    <td>Wed</td>
+                    <td>+16°C</td>
+                    <td>☁</td>
+                </tr>
+                <tr class="row-table">
+                    <td>Thu</td>
+                    <td>+18°C</td>
+                    <td>⛅</td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+      </section>
+    </div>
+    
+    <footer>coded by Sofiia Chuba</footer>
+  </body>
+  <script src="src/index.js"></script>
+</html>
