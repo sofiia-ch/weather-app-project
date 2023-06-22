@@ -39,5 +39,3 @@ function showTemperature(response) {
   let temperatureToday = document.querySelector("#temperature-today");
   temperatureToday.innerHTML = `${temperature}`;
 }
-
-//let city = document.querySelector("#search-text-input");
