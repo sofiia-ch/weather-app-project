@@ -23,11 +23,15 @@ function search(event) {
 
   let city = document.querySelector("#city");
   city.innerHTML = `${searchInput.value}`;
+
+  let apiKey = "f81614abe2395d5dfecd45b9298041de";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
 }
 let form = document.querySelector("#search-form");
 
 form.addEventListener("submit", search);
-
 
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
@@ -36,13 +40,4 @@ function showTemperature(response) {
   temperatureToday.innerHTML = `${temperature}`;
 }
 
-
-let apiKey = "f81614abe2395d5dfecd45b9298041de";
-let units = "metric";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-
-axios.get(apiUrl).then(showTemperature);
-
-
 //let city = document.querySelector("#search-text-input");
-
